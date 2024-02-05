@@ -49,6 +49,10 @@ picture img {
     font-style: normal;
 }
 
+.font-color-blue {
+    color: #002F87;
+}
+
 
 /* Header */
 
@@ -109,6 +113,7 @@ section {
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #717171;
 }
 
 @media screen and (min-width: 768px) {
@@ -128,7 +133,249 @@ section {
     }
 }
 
+#top {
+    padding-bottom: 104px;
+}
+
 #top h1 {
     width: 354px;
+    margin: 54px auto 0;
+}
+
+#top h2 {
+    font-size: 30px;
+    margin-top: 48px;
+}
+
+#top p {
+    font-size: 17px;
+    margin-top: 48px;
+}
+
+#information {
+    padding-bottom: 83px;
+}
+
+#information h2 {
+    font-size: 32px
+}
+
+#information .date {
+    margin-top: 44px;
+    font-size: 40px;
+}
+
+#information .business-time {
+    font-size: 24px;
+}
+
+#information .address {
+    margin-top: 28px;
+    font-size: 13px;
+}
+
+#reserve {
+    padding-bottom: 78px;
+}
+
+#reserve h2 {
+    font-size: 32px
+}
+
+#reserve h3 {
+    margin-top: 48px;
+    font-size: 26px;
+}
+
+#reserve .description {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+#reserve ul {
+    margin: 30px auto 0;
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#reserve ul li {
+    width: 192px;
+}
+
+#reserve ul li h4 {
+    font-size: 18px;
+    padding: 14px 0;
+    text-align: center;
+    letter-spacing: -1px;
+    border-top: 1px solid #002f87;
+    border-bottom: 1px solid #002f87;
+    font-weight: bold;
+}
+
+#reserve ul li:last-child h4 {
+    padding: 10px 0;
+}
+
+#reserve ul li h4 span {
+    letter-spacing: 0;
+    font-size: 8px;
+}
+
+#reserve ul li .item-description {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#reserve ul li .link {
+    margin-top: 50px;
+
+}
+
+#reserve ul li .link p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#reserve ul li .link a {
+
+}
+
+#menu {
+    padding-bottom: 82px;
+}
+
+#menu h2 {
+    font-size: 32px
+}
+
+#menu .cream-soda h3,
+#menu .parfaite h3 {
+    font-size: 38px;
+    margin-top: 55px;
+}
+
+#menu .cream-soda h3 span,
+#menu .parfaite h3 span {
+    font-size: 21px
+}
+
+#menu .cream-soda ul,
+#menu .parfaite ul {
+    width: 652px;
     margin: 0 auto;
 }
+
+#menu .cream-soda ul li,
+#menu .parfaite ul li {
+    margin: 37px auto 0;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+}
+
+#menu .cream-soda ul li h4 img,
+#menu .parfaite ul li h4 img{
+    width: 550px;
+}
+
+#menu .cream-soda ul li:nth-child(2n-1) .text,
+#menu .parfaite ul li:nth-child(2n-1) .text {
+    position: absolute;
+    width: 238px;
+    top: 150px;
+    right: 0;
+}
+
+#menu .cream-soda ul li:nth-child(2n-1) .price,
+#menu .parfaite ul li:nth-child(2n-1) .price {
+    position: absolute;
+    width: 238px;
+    bottom: 0;
+    right: 0;
+}
+
+#menu .cream-soda ul li:nth-child(2n) h4,
+#menu .parfaite ul li:nth-child(2n) h4{
+    text-align: right;
+}
+
+#menu .cream-soda ul li:nth-child(2n) .text,
+#menu .parfaite ul li:nth-child(2n) .text {
+    position: absolute;
+    width: 238px;
+    top: 150px;
+    left: 0;
+    text-align: justify;
+}
+
+#menu .cream-soda ul li:nth-child(2n) .price,
+#menu .parfaite ul li:nth-child(2n) .price {
+    position: absolute;
+    width: 238px;
+    bottom: 0;
+    left: 0;
+}
+
+#menu .director {
+    display: flex;
+    text-align: left;
+    margin: 20px auto;
+    padding-top: 20px;
+    width: 654px;
+    border-top: 1px solid #717171;
+
+}
+
+#menu .director .image {
+    text-align: center;
+    width: 110px;
+}
+
+#menu .director .image img {
+    width: 63px;
+}
+
+#menu .director .text {
+    width: 529px;
+}
+
+#menu .director .text h4 {
+    font-size: 16px;
+}
+
+#menu .director .text p {
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+#recipe h2 {
+    font-size: 32px
+}
+
+#recipe h3 {
+    margin-top: 53px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+#recipe ul {
+    margin: 30px auto 0;
+    width: 654px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#recipe ul li {
+    width: 202px;
+}
+
+#recipe ul li p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
