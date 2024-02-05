@@ -146,6 +146,15 @@ section {
     }
 }
 
+h2 {
+    background-image: url("../images/bg-header.png");
+    background-position: center;
+    background-size: 1280px;
+    padding: 22px 0;
+    border-top: 1px solid #002f87;
+    border-bottom: 1px solid #002f87;
+}
+
 #top {
     padding-bottom: 104px;
 }
@@ -203,7 +212,8 @@ section {
 #reserve .description {
     font-size: 15px;
     margin-top: 30px;
-    line-height: 1.5;
+    line-height: 1.8;
+    letter-spacing: 1px;
 }
 
 #reserve ul {
@@ -228,12 +238,13 @@ section {
 }
 
 #reserve ul li:last-child h4 {
-    padding: 10px 0;
+    padding: 4px 0 8px;
 }
 
 #reserve ul li h4 span {
     letter-spacing: 0;
     font-size: 8px;
+    line-height: 16px;
 }
 
 #reserve ul li .item-description {
@@ -243,8 +254,7 @@ section {
 }
 
 #reserve ul li .link {
-    margin-top: 50px;
-
+    margin-top: 24px;
 }
 
 #reserve ul li .link p {
@@ -254,7 +264,24 @@ section {
 }
 
 #reserve ul li .link a {
+    display: block;
+    margin: 20px auto 0;
+    width: 105px;
+    height: 105px;
+    border-radius: 52px;
+    background-image: url("../images/bg-reserve-btn.png");
+    background-size: contain;
+    border: 1px solid #002f87;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
 
+#reserve ul li .link a:hover {
+    background: #002f87;
+    color: white;
+    transition: 0.3s;
 }
 
 #menu {
@@ -267,13 +294,24 @@ section {
 
 #menu .cream-soda h3,
 #menu .parfaite h3 {
-    font-size: 38px;
+    font-size: 36px;
     margin-top: 55px;
+    font-weight: bold;
+    letter-spacing: 8px;
 }
 
 #menu .cream-soda h3 span,
 #menu .parfaite h3 span {
-    font-size: 21px
+    line-height: 44px;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: initial;
+}
+
+#menu .cream-soda .time,
+#menu .parfaite .time {
+    font-size: 22px;
+    letter-spacing: 2.8px;
 }
 
 #menu .cream-soda ul,
