@@ -53,11 +53,24 @@ picture img {
     color: #002F87;
 }
 
+html {
+    background-image: url("../images/bg-plane.png");
+    background-size: 2500px;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+body {
+    background-image: url("../images/bg-ornament.png");
+    background-size: 2000px;
+    background-position: center 32.6%;
+    background-repeat: repeat-y;
+}
+
 
 /* Header */
 
 header {
-    max-width: 1280px;
     margin: 0 auto;
     position: relative;
     position: -webkit-sticky;
@@ -190,6 +203,7 @@ section {
 #reserve .description {
     font-size: 15px;
     margin-top: 30px;
+    line-height: 1.5;
 }
 
 #reserve ul {
@@ -272,7 +286,7 @@ section {
 #menu .parfaite ul li {
     margin: 37px auto 0;
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -284,17 +298,23 @@ section {
 #menu .cream-soda ul li:nth-child(2n-1) .text,
 #menu .parfaite ul li:nth-child(2n-1) .text {
     position: absolute;
-    width: 238px;
+    width: 226px;
     top: 150px;
+    line-height: 1.7;
     right: 0;
+}
+
+#menu .cream-soda ul li .price span,
+#menu .parfaite ul li .price span {
+    font-size: 10px;
 }
 
 #menu .cream-soda ul li:nth-child(2n-1) .price,
 #menu .parfaite ul li:nth-child(2n-1) .price {
     position: absolute;
-    width: 238px;
+    width: 226px;
     bottom: 0;
-    right: 0;
+    right: -2px;
 }
 
 #menu .cream-soda ul li:nth-child(2n) h4,
@@ -305,8 +325,9 @@ section {
 #menu .cream-soda ul li:nth-child(2n) .text,
 #menu .parfaite ul li:nth-child(2n) .text {
     position: absolute;
-    width: 238px;
+    width: 226px;
     top: 150px;
+    line-height: 1.6;
     left: 0;
     text-align: justify;
 }
@@ -314,8 +335,8 @@ section {
 #menu .cream-soda ul li:nth-child(2n) .price,
 #menu .parfaite ul li:nth-child(2n) .price {
     position: absolute;
-    width: 238px;
-    bottom: 0;
+    width: 226px;
+    bottom: -2px;
     left: 0;
 }
 
