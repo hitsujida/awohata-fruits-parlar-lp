@@ -1,0 +1,105 @@
+[aria-hidden=true] {
+    overflow: visible;
+    height: auto;
+    opacity: 1;
+}
+
+body,
+html {
+    padding-top: 0;
+    font-size: 1em;
+}
+
+body :target,
+html :target {
+    scroll-margin-top: 60px;
+}
+
+picture img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .pc-only {
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sp-only {
+        display: none!important;
+    }
+}
+
+/* Header */
+
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 65px;
+    }
+}
+
+header div {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+header .logo {
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+
+header .logo img {
+    width: 74px;
+}
+
+@media screen and (min-width: 768px) {
+    header .logo {
+        width: 150px;
+    }
+    header .logo img {
+        width: 94px;
+    }
+}
+
+section {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        width: 1024px;
+    }
+}
+
+.with-margin {
+    padding: 0 6%;
+}
+
+@media screen and (min-width: 768px) {
+    .with-margin {
+        padding: initial;
+        max-width: 1280px;
+    }
+}
