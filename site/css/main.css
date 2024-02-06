@@ -53,6 +53,30 @@ picture img {
     color: #002F87;
 }
 
+.c-scroll-pagetop {
+    position: fixed;
+    z-index: 9999;
+    display: none;
+}
+
+.c-scroll-pagetop.is-active {
+    position: absolute;
+    display: block;
+}
+
+.c-scroll-pagetop {
+    right: 2.666vw;
+    bottom: 2.666vw;
+}
+
+.c-scroll-pagetop .c-pagetop-trigger {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/to-page-top-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 html {
     background-image: url("../images/bg-plane.png");
     background-size: 2500px;
@@ -148,13 +172,27 @@ section {
 
 .section-header {
     background-image: url("../images/bg-header.png");
+    font-size: 16px;
     background-position: center;
-    background-size: 1280px;
-    padding: 22px 0;
+    background-size: cover;
+    padding: 12px 0;
     border-top: 1px solid #002f87;
     border-bottom: 1px solid #002f87;
     letter-spacing: 5px;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .section-header {
+        background-image: url("../images/bg-header.png");
+        background-position: center;
+        background-size: 1280px;
+        padding: 22px 0;
+        border-top: 1px solid #002f87;
+        border-bottom: 1px solid #002f87;
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
 }
 
 #top {
@@ -162,18 +200,39 @@ section {
 }
 
 #top h1 {
-    width: 354px;
+    width: 76%;
     margin: 54px auto 0;
 }
 
+@media screen and (min-width: 768px) {
+    #top h1 {
+        width: 354px;
+        margin: 54px auto 0;
+    }
+}
+
 #top h2 {
-    font-size: 30px;
-    margin-top: 48px;
+    font-size: 20px;
+    margin-top: 38px;
+}
+
+@media screen and (min-width: 768px) {
+    #top h2 {
+        font-size: 30px;
+        margin-top: 48px;
+    }
 }
 
 #top p {
-    font-size: 17px;
-    margin-top: 48px;
+    font-size: 14px;
+    margin-top: 26px;
+    line-height: 2.2;
+}
+
+@media screen and (min-width: 768px) {
+    #top p {
+        margin-top: 48px;
+    }
 }
 
 #information {
@@ -181,66 +240,135 @@ section {
 }
 
 #information h2 {
-    font-size: 32px
+    font-size: 30px
+}
+
+@media screen and (min-width: 768px) {
+    #information h2 {
+        font-size: 32px
+    }
 }
 
 #information .date {
-    margin-top: 44px;
-    font-size: 40px;
-    line-height: 1;
+    margin: 28px auto 0;
+    width: 250px;
+    font-size: 20px;
+    line-height: 1.4;
     letter-spacing: 5px;
     font-weight: bold;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    #information .date {
+        font-size: 40px;
+        line-height: 1;
+    }
 }
 
 #information .business-time {
-    font-size: 24px;
+    font-size: 14px;
+    margin-top: 10px;
     letter-spacing: 3px;
 }
 
+@media screen and (min-width: 768px) {
+    #information .business-time {
+        font-size: 24px;
+    }
+}
+
 #information .address {
-    margin-top: 28px;
-    font-size: 13px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #information .address {
+        margin-top: 28px;
+        font-size: 13px;
+    }
 }
 
 #reserve {
-    padding-bottom: 78px;
+    padding-bottom: 20px;
 }
 
-#reserve h2 {
-    font-size: 32px
+@media screen and (min-width: 768px) {
+    #reserve {
+        padding-bottom: 78px;
+    }
 }
 
 #reserve h3 {
-    margin-top: 48px;
-    font-size: 26px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve h3 {
+        margin-top: 48px;
+        font-size: 26px;
+    }
 }
 
 #reserve .description {
-    font-size: 15px;
+    font-size: 12px;
+    text-align: left;
     margin-top: 30px;
     line-height: 1.8;
     letter-spacing: 1px;
 }
 
+@media screen and (min-width: 768px) {
+    #reserve .description {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 30px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+}
+
 #reserve ul {
     margin: 30px auto 0;
-    width: 640px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul {
+        margin: 30px auto 0;
+        width: 640px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 #reserve ul li {
-    width: 192px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li {
+        width: 192px;
+    }
 }
 
 #reserve ul li h4 {
-    font-size: 18px;
-    padding: 14px 0;
+    font-size: 14px;
+    padding: 8px 0;
     text-align: center;
     letter-spacing: -1px;
     border-top: 1px solid #002f87;
     border-bottom: 1px solid #002f87;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li h4 {
+        font-size: 18px;
+        padding: 14px 0;
+    }
 }
 
 #reserve ul li:last-child h4 {
@@ -249,33 +377,76 @@ section {
 
 #reserve ul li h4 span {
     letter-spacing: 0;
-    font-size: 8px;
-    line-height: 16px;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li h4 span {
+        font-size: 8px;
+        line-height: 16px;
+    }
 }
 
 #reserve ul li .item-description {
     text-align: justify;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .item-description {
+        font-size: 14px;
+    }
 }
 
 #reserve ul li .link {
-    margin-top: 24px;
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .link {
+        margin: 24px auto 0;
+        display: block;
+    }
 }
 
 #reserve ul li .link p {
     position: relative;
     font-size: 14px;
+    width: 58%;
     line-height: 1.5;
     font-weight: bold;
+    margin-left: auto;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .link p {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 #reserve ul li .link a {
     display: block;
-    margin: 16px auto 0;
-    width: 105px;
-    height: 105px;
+    margin: 16px auto 0 0;
+    width: 75px;
+    height: 75px;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .link a {
+        display: block;
+        margin: 16px auto 0;
+        width: 105px;
+        height: 105px;
+        position: relative;
+    }
 }
 
 #reserve ul li .link a:hover {
@@ -303,74 +474,156 @@ section {
 }
 
 #menu {
-    padding-bottom: 82px;
+    padding-bottom: 50px;
 }
 
-#menu h2 {
-    font-size: 32px
+@media screen and (min-width: 768px) {
+    #menu {
+        padding-bottom: 82px;
+    }
 }
 
 #menu .cream-soda h3,
 #menu .parfaite h3 {
-    font-size: 36px;
-    margin-top: 55px;
+    font-size: 18px;
+    margin-top: 23px;
     font-weight: bold;
     letter-spacing: 8px;
 }
 
+@media screen and (min-width: 768px) {
+    #menu .cream-soda h3,
+    #menu .parfaite h3 {
+        font-size: 36px;
+        margin-top: 55px;
+        font-weight: bold;
+        letter-spacing: 8px;
+    }
+}
+
 #menu .cream-soda h3 span,
 #menu .parfaite h3 span {
-    line-height: 44px;
+    line-height: 28px;
     font-weight: 500;
-    font-size: 21px;
+    font-size: 11px;
     letter-spacing: initial;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda h3 span,
+    #menu .parfaite h3 span {
+        line-height: 44px;
+        font-size: 21px;
+    }
 }
 
 #menu .cream-soda .time,
 #menu .parfaite .time {
-    font-size: 22px;
-    letter-spacing: 2.8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda .time,
+    #menu .parfaite .time {
+        font-size: 22px;
+        letter-spacing: 2.8px;
+    }
 }
 
 #menu .cream-soda ul,
 #menu .parfaite ul {
-    width: 652px;
-    margin: 0 auto;
+    width: 100%;
+    margin: -10px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul,
+    #menu .parfaite ul {
+        width: 652px;
+        margin: 0 auto;
+    }
 }
 
 #menu .cream-soda ul li,
 #menu .parfaite ul li {
-    margin: 42px auto 0;
+    margin: 25px auto 0;
     position: relative;
     font-size: 15px;
     text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li,
+    #menu .parfaite ul li {
+        margin: 42px auto 0;
+    }
+}
+
 #menu .cream-soda ul li h4 img,
 #menu .parfaite ul li h4 img{
-    width: 550px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li h4 img,
+    #menu .parfaite ul li h4 img{
+        width: 550px;
+    }
 }
 
 #menu .cream-soda ul li:nth-child(2n-1) .text,
 #menu .parfaite ul li:nth-child(2n-1) .text {
-    position: absolute;
-    width: 226px;
+    position: static;
+    width: 100%;
     top: 150px;
+    margin-top: 10px;
     line-height: 1.7;
-    right: 0;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n-1) .text,
+    #menu .parfaite ul li:nth-child(2n-1) .text {
+        position: absolute;
+        width: 226px;
+        top: 150px;
+        right: 0;
+        margin-top: 0;
+        font-size: 15px;
+    }
 }
 
 #menu .cream-soda ul li .price span,
 #menu .parfaite ul li .price span {
-    font-size: 10px;
+    font-size: 9px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li .price span,
+    #menu .parfaite ul li .price span {
+        font-size: 10px;
+    }
 }
 
 #menu .cream-soda ul li:nth-child(2n-1) .price,
 #menu .parfaite ul li:nth-child(2n-1) .price {
     position: absolute;
-    width: 226px;
-    bottom: 0;
-    right: -2px;
+    width: initial;
+    top: calc(62vw - 20px);
+    right: 4vw;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n-1) .price,
+    #menu .parfaite ul li:nth-child(2n-1) .price {
+        position: absolute;
+        width: 226px;
+        top: 0;
+        bottom: 0;
+        right: -2px;
+    }
 }
 
 #menu .cream-soda ul li:nth-child(2n) h4,
@@ -380,35 +633,75 @@ section {
 
 #menu .cream-soda ul li:nth-child(2n) .text,
 #menu .parfaite ul li:nth-child(2n) .text {
-    position: absolute;
-    width: 226px;
+    position: static;
+    width: 100%;
     top: 150px;
-    line-height: 1.6;
-    left: 0;
-    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n) .text,
+    #menu .parfaite ul li:nth-child(2n) .text {
+        position: absolute;
+        width: 226px;
+        top: 150px;
+        line-height: 1.6;
+        left: 0;
+        text-align: justify;
+    }
+
 }
 
 #menu .cream-soda ul li:nth-child(2n) .price,
 #menu .parfaite ul li:nth-child(2n) .price {
     position: absolute;
-    width: 226px;
-    bottom: -2px;
+    width: initial;
+    top: calc(62vw - 16px);
     left: 0;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n) .price,
+    #menu .parfaite ul li:nth-child(2n) .price {
+        position: absolute;
+        width: 226px;
+        bottom: -2px;
+        left: 0;
+    }
 }
 
 #menu .director {
     display: flex;
     text-align: left;
-    margin: 20px auto;
-    padding-top: 20px;
-    width: 654px;
+    margin: 30px auto 0;
+    padding-top: 16px;
+    width: 100%;
     border-top: 1px solid #717171;
+    align-items: center;
+}
 
+@media screen and (min-width: 768px) {
+    #menu .director {
+        margin: 20px auto;
+        padding-top: 20px;
+        width: 654px;
+        align-items: initial;
+    }
 }
 
 #menu .director .image {
-    text-align: center;
-    width: 110px;
+    text-align: left;
+    width: 43%;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .image {
+        text-align: center;
+        width: 110px;
+    }
 }
 
 #menu .director .image img {
@@ -416,42 +709,101 @@ section {
 }
 
 #menu .director .text {
-    width: 529px;
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .text {
+        width: 540px;
+    }
 }
 
 #menu .director .text h4 {
-    font-size: 16px;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .text h4 {
+        font-size: 16px;
+    }
 }
 
 #menu .director .text p {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 10px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
-#recipe h2 {
-    font-size: 32px
+@media screen and (min-width: 768px) {
+    #menu .director .text p {
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 1.8;
+        letter-spacing: 2px;
+    }
 }
 
 #recipe h3 {
-    margin-top: 53px;
-    font-size: 18px;
+    margin-top: 28px;
+    font-size: 12px;
     line-height: 1.4;
 }
 
+@media screen and (min-width: 768px) {
+    #recipe h3 {
+        margin-top: 53px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
 #recipe ul {
-    margin: 30px auto 0;
-    width: 654px;
-    display: flex;
-    justify-content: space-between;
+    margin: 24px auto 40px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul {
+        margin: 30px auto 0;
+        width: 654px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 #recipe ul li {
-    width: 202px;
+    width: 100%;
+    margin-top: 30px;
 }
 
-#recipe ul li a:hover p  {
-    opacity: 0.4;
+@media screen and (min-width: 768px) {
+    #recipe ul li {
+        width: 202px;
+        margin-top: 0;
+    }
+}
+
+#recipe ul li a .image {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul li a .image {
+        overflow: hidden;
+        width: 202px;
+        height: 202px;
+    }
+}
+
+#recipe ul li a .image img {
+    opacity: 1;
+    transition: 0.6s all!important;
+}
+
+#recipe ul li a .image img:hover {
+    transform:scale(1.12, 1.12);
+    opacity: 0.8;
+    transition: 0.5s all!important;
 }
 
 #recipe ul li p {
@@ -460,3 +812,18 @@ section {
     line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+    #recipe ul li p {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+footer {
+    background: white;
+}
+
+.l-footer {
+    height: auto!important;
+}
