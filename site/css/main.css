@@ -77,16 +77,6 @@ picture img {
     background-size: cover;
 }
 
-.google-map {
-    margin-bottom: 48px;
-    position: relative;
-    width: 600px;
-    height: 450px;
-    iframe {
-        filter: grayscale(1);
-    }
-}
-
 html {
     background-image: url("../images/bg-plane.png");
     background-size: 2500px;
@@ -202,6 +192,7 @@ section {
         border-bottom: 1px solid #002f87;
         letter-spacing: 5px;
         font-weight: bold;
+        font-size: 32px;
     }
 }
 
@@ -278,6 +269,18 @@ section {
     }
 }
 
+#information .date span {
+    font-size: 14px;
+    position: relative;
+    left: -9px;
+}
+
+@media screen and (min-width: 768px) {
+    #information .date span {
+        font-size: 22px;
+    }
+}
+
 #information .business-time {
     font-size: 14px;
     margin-top: 10px;
@@ -287,6 +290,7 @@ section {
 @media screen and (min-width: 768px) {
     #information .business-time {
         font-size: 24px;
+        margin-top: 0;
     }
 }
 
@@ -297,8 +301,20 @@ section {
 
 @media screen and (min-width: 768px) {
     #information .address {
-        margin-top: 28px;
+        margin-top: 16px;
         font-size: 13px;
+    }
+}
+
+#information .google-map {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #information .google-map {
+        margin: 26px auto 80px;
+        width: 556px;
+        height: 286px;
     }
 }
 
@@ -379,7 +395,7 @@ section {
 @media screen and (min-width: 768px) {
     #reserve ul li h4 {
         font-size: 18px;
-        padding: 14px 0;
+        padding: 14px 0 12px;
     }
 }
 
@@ -609,7 +625,7 @@ section {
         top: 150px;
         right: 0;
         margin-top: 0;
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -670,6 +686,7 @@ section {
         line-height: 1.6;
         left: 0;
         text-align: justify;
+        font-size: 14px;
     }
 
 }
