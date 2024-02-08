@@ -33,3 +33,4 @@ $(document).on("click", ".c-pagetop-trigger", function(event) {
         behavior: "smooth",
     });
 })
+

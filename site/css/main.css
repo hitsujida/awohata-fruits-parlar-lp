@@ -77,6 +77,16 @@ picture img {
     background-size: cover;
 }
 
+.google-map {
+    margin-bottom: 48px;
+    position: relative;
+    width: 600px;
+    height: 450px;
+    iframe {
+        filter: grayscale(1);
+    }
+}
+
 html {
     background-image: url("../images/bg-plane.png");
     background-size: 2500px;
@@ -261,6 +271,8 @@ section {
 
 @media screen and (min-width: 768px) {
     #information .date {
+        text-align: center;
+        width: auto;
         font-size: 40px;
         line-height: 1;
     }
@@ -388,6 +400,12 @@ section {
     }
 }
 
+#reserve ul li h4 time {
+    letter-spacing: 0;
+    font-size: 11px;
+    line-height: 20px;
+}
+
 #reserve ul li .item-description {
     text-align: justify;
     margin-top: 10px;
@@ -427,6 +445,7 @@ section {
 @media screen and (min-width: 768px) {
     #reserve ul li .link p {
         margin: auto;
+        width: auto;
         text-align: center;
     }
 }
@@ -611,7 +630,7 @@ section {
     position: absolute;
     width: initial;
     top: calc(62vw - 20px);
-    right: 4vw;
+    left: calc(-9px + 67vw);
     font-size: 12px;
 }
 
@@ -620,8 +639,9 @@ section {
     #menu .parfaite ul li:nth-child(2n-1) .price {
         position: absolute;
         width: 226px;
-        top: 0;
+        top: initial;
         bottom: 0;
+        left: auto;
         right: -2px;
     }
 }
@@ -668,6 +688,7 @@ section {
     #menu .parfaite ul li:nth-child(2n) .price {
         position: absolute;
         width: 226px;
+        top: initial;
         bottom: -2px;
         left: 0;
     }
