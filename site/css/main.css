@@ -197,7 +197,7 @@ section {
 }
 
 #top h1 {
-    width: 280px;
+    width: 250px;
     margin: 54px auto 0;
 }
 
@@ -368,25 +368,13 @@ section {
     margin-top: 20px;
     line-height: 1.5;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
     #reserve .description {
-        font-size: 15px;
-        text-align: center;
         margin-top: 35px;
-        line-height: 25px;
-        letter-spacing: 1px;
-    }
-}
-
-#reserve .description span {
-    font-size: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    #reserve .description span {
-        font-size: 12px;
+        width: 460px;
     }
 }
 
@@ -416,17 +404,37 @@ section {
 
 #reserve ul li h4 {
     font-size: 14px;
-    padding: 8px 0 6px;
-    text-align: center;
+    padding: 8px 0 7px;
     border-top: 1px solid #002f87;
     border-bottom: 1px solid #002f87;
-    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
     #reserve ul li h4 {
         border: none;
         padding: 0;
+    }
+}
+
+#reserve ul li:nth-child(1) h4 img {
+    width: 160px;
+}
+#reserve ul li:nth-child(2) h4 img {
+    width: 165px;
+}
+#reserve ul li:nth-child(3) h4 img {
+    width: 227px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:nth-child(1) h4 img {
+        width: initial;
+    }
+    #reserve ul li:nth-child(2) h4 img {
+        width: initial;
+    }
+    #reserve ul li:nth-child(3) h4 img {
+        width: initial;
     }
 }
 
@@ -823,22 +831,29 @@ section {
 
 #menu .director .image {
     text-align: left;
-    width: 43%;
+    width: 35%;
+    margin-right: 5%;
+    margin-top: 5%;
+    max-width: 100px;
 }
 
 @media screen and (min-width: 768px) {
     #menu .director .image {
         text-align: center;
-        width: 110px;
+        width: 190px;
+        margin-left: 14px;
+        margin-right: 0;
+        margin-top: 0;
+        max-width: initial;
     }
 }
 
 #menu .director .image img {
-    width: 63px;
+    width: 120px;
 }
 
 #menu .director .text {
-    width: auto;
+    width: 65%;
 }
 
 @media screen and (min-width: 768px) {
@@ -848,6 +863,7 @@ section {
 }
 
 #menu .director .text h4 {
+    font-weight: bold;
     font-size: 12px;
 }
 
@@ -858,16 +874,17 @@ section {
 }
 
 #menu .director .text p {
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 12px;
     margin-top: 10px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 @media screen and (min-width: 768px) {
     #menu .director .text p {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 12px;
-        line-height: 1.7;
+        line-height: 1.8;
         letter-spacing: 2px;
     }
 }

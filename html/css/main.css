@@ -1,0 +1,975 @@
+[aria-hidden=true] {
+    overflow: visible;
+    height: auto;
+    opacity: 1;
+}
+
+body,
+html {
+    padding-top: 0;
+    font-size: 1em;
+    -webkit-text-size-adjust: 100%;
+}
+
+body :target,
+html :target {
+    scroll-margin-top: 60px;
+}
+
+picture img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .pc-only {
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sp-only {
+        display: none!important;
+    }
+}
+
+.shippori-mincho-b1-regular {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.shippori-mincho-regular {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-color-blue {
+    color: #002F87;
+}
+
+.c-scroll-pagetop-local {
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    right: 2.666vw;
+    bottom: 2.666vw;
+}
+
+@media screen and (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+}
+
+.c-scroll-pagetop-local.is-active {
+    position: absolute;
+    display: block;
+}
+
+.c-scroll-pagetop-local .c-pagetop-trigger-local {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/to-page-top-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    /*background-image: url("../images/bg-plane.png");*/
+    /*background-size: 2176px;*/
+    /*background-position: center;*/
+    /*background-repeat: repeat-y;*/
+}
+
+body {
+    position: relative;
+    background-image: url("../images/bg-main-sp.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        position: relative;
+        background-image: url("../images/bg-main-pc.jpg");
+        background-size: 2176px;
+        background-position: center -186px;
+        background-repeat: repeat-y;
+        margin: 0 auto;
+    }
+
+
+    header .logo {
+        width: 150px;
+    }
+    header .logo img {
+        width: 94px;
+    }
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 2176px;
+        min-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #585858;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+    }
+}
+
+.with-margin {
+    padding: 0 6%;
+}
+
+@media screen and (min-width: 768px) {
+    .with-margin {
+        padding: initial;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section-header {
+    background-image: url("../images/bg-header.jpg");
+    font-size: 16px;
+    background-position: center;
+    background-size: cover;
+    padding: 12px 0;
+    border-top: 1px solid #002f87;
+    border-bottom: 1px solid #002f87;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .section-header {
+        background-image: url("../images/bg-header.jpg");
+        background-position: center;
+        background-size:  2176px;
+        padding: 22px 0;
+        border-top: 1px solid #002f87;
+        border-bottom: 1px solid #002f87;
+        letter-spacing: 5px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+}
+
+#top {
+    padding-bottom: 81px;
+    margin-top: 26%;
+}
+
+@media screen and (min-width: 768px) {
+    #top {
+        padding-bottom: 81px;
+        margin-top: 132px;
+    }
+}
+
+#top h1 {
+    width: 250px;
+    margin: 54px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    #top h1 {
+        width: 354px;
+        margin: 54px auto 0;
+    }
+}
+
+#top h2 {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    #top h2 {
+        font-size: 30px;
+        line-height: 20px;
+        margin-top: 59px;
+    }
+}
+
+#top .text {
+    font-size: 14px;
+    margin-top: 26px;
+    line-height: 2.2;
+}
+
+@media screen and (min-width: 768px) {
+    #top .text {
+        font-size: 17px;
+        line-height: 37px;
+        margin-top: 45px;
+    }
+}
+
+#top .text p {
+    margin-bottom: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    #top .text p {
+        margin-bottom: 7px;
+    }
+}
+
+#information {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    #information {
+        padding-bottom: 81px;
+    }
+}
+
+#information h3 {
+    margin: 26px auto 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+    #information h3 {
+        margin:52px auto 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}
+
+#information .date {
+    margin: 21px 0 0 1em;
+    font-size: calc(4.5vw);
+    line-height: 1.4;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    #information .date {
+        text-align: center;
+        width: auto;
+        font-size: 40px;
+        line-height: 1;
+    }
+}
+
+#information .date span {
+    font-size: 3vw;
+    position: relative;
+    left: -9px;
+}
+
+@media screen and (min-width: 768px) {
+    #information .date span {
+        font-size: 22px;
+    }
+}
+
+#information .business-time {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    #information .business-time {
+        font-size: 24px;
+        margin-top: 0;
+    }
+}
+
+#information .address {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #information .address {
+        margin-top: 31px;
+        line-height: 1;
+        font-size: 15px;
+    }
+}
+
+#information .google-map {
+    width: 100%;
+    margin: 8px auto 0;
+    height: 64%;
+}
+
+@media screen and (min-width: 768px) {
+    #information .google-map {
+        margin: 31px auto 0;
+        width: 556px;
+        height: 286px;
+    }
+}
+
+#reserve {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve {
+        padding-bottom: 72px;
+    }
+}
+
+#reserve h3 {
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve h3 {
+        margin-top: 55px;
+        font-size: 26px;
+        line-height: 19px;
+    }
+}
+
+#reserve .description {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve .description {
+        margin-top: 35px;
+        width: 460px;
+    }
+}
+
+#reserve ul {
+    margin: 42px auto 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul {
+        margin: 66px auto 0;
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#reserve ul li {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li {
+        width: 220px;
+    }
+}
+
+#reserve ul li h4 {
+    font-size: 14px;
+    padding: 8px 0 7px;
+    border-top: 1px solid #002f87;
+    border-bottom: 1px solid #002f87;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li h4 {
+        border: none;
+        padding: 0;
+    }
+}
+
+#reserve ul li:nth-child(1) h4 img {
+    width: 160px;
+}
+#reserve ul li:nth-child(2) h4 img {
+    width: 165px;
+}
+#reserve ul li:nth-child(3) h4 img {
+    width: 227px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:nth-child(1) h4 img {
+        width: initial;
+    }
+    #reserve ul li:nth-child(2) h4 img {
+        width: initial;
+    }
+    #reserve ul li:nth-child(3) h4 img {
+        width: initial;
+    }
+}
+
+#reserve ul li:last-child h4 {
+    padding: 4px 0 6px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:last-child h4 {
+        padding: 0;
+    }
+}
+
+#reserve ul li h4 span {
+    letter-spacing: 0;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li h4 span {
+        font-size: 8px;
+        line-height: 16px;
+    }
+}
+
+#reserve ul li h4 time {
+    letter-spacing: 0;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+#reserve ul li .item-description {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .item-description {
+        font-size: 15px;
+        line-height: 23px;
+    }
+}
+
+#reserve ul li .link {
+    margin: 16px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .link {
+        margin: 24px auto 0;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:nth-child(1) .link {
+        margin-top: 54px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:nth-child(2) .link {
+        margin-top: 79px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li:nth-child(3) .link {
+        margin-top: 8px;
+    }
+}
+
+#reserve ul li .link p {
+    position: relative;
+    font-size: 14px;
+    width: 58%;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-left: auto;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+
+    #reserve ul li .link p {
+        margin-left: auto;
+        margin-right: auto;
+        height: 41px;
+    }
+
+    #reserve ul li:nth-child(1) .link p {
+        width: 165px;
+    }
+
+    #reserve ul li:nth-child(2) .link p,
+    #reserve ul li:nth-child(3) .link p {
+        width: 105px;
+    }
+}
+
+#reserve ul li .link a {
+    display: block;
+    margin: 0 auto 0 0;
+    width: 75px;
+    height: 75px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    #reserve ul li .link a {
+        display: block;
+        margin: 16px auto 0;
+        width: 105px;
+        height: 105px;
+        position: relative;
+    }
+}
+
+#reserve ul li .link a:hover {
+    transition: 0.3s;
+}
+
+#reserve ul li .link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#reserve ul li .link a:hover img {
+    transition: opacity 0.3s;
+}
+
+#reserve ul li .link a:hover img:first-of-type {
+    opacity: 0;
+}
+#reserve ul li .link a img:last-of-type {
+    opacity: 0;
+}
+#reserve ul li .link a:hover img:last-of-type {
+    opacity: 1;
+}
+
+#menu {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu {
+        padding-bottom: 55px;
+    }
+}
+
+#menu .cream-soda h3,
+#menu .parfaite h3 {
+    font-size: 18px;
+    margin-top: 27px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+#menu .parfaite h3 {
+    margin-top: 57px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda h3,
+    #menu .parfaite h3 {
+        font-size: 38px;
+        margin-top: 52px;
+        font-weight: bold;
+        letter-spacing: 8px;
+    }
+
+    #menu .parfaite h3 {
+        margin-top: 140px;
+    }
+}
+
+#menu .cream-soda h3 span,
+#menu .parfaite h3 span {
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: initial;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda h3 span,
+    #menu .parfaite h3 span {
+        line-height: 44px;
+        font-size: 21px;
+    }
+}
+
+#menu .cream-soda .time,
+#menu .parfaite .time {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda .time,
+    #menu .parfaite .time {
+        font-size: 22px;
+        margin-top: 13px;
+        letter-spacing: 2.8px;
+    }
+}
+
+#menu .cream-soda ul,
+#menu .parfaite ul {
+    width: 100%;
+    margin: -10px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul,
+    #menu .parfaite ul {
+        width: 652px;
+        margin: 0 auto;
+    }
+}
+
+#menu .cream-soda ul li,
+#menu .parfaite ul li {
+    margin: 25px auto 0;
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li,
+    #menu .parfaite ul li {
+        margin: 34px auto 0;
+    }
+}
+
+#menu .cream-soda ul li h4 img,
+#menu .parfaite ul li h4 img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li h4 img,
+    #menu .parfaite ul li h4 img{
+        width: 550px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li .text.adjust {
+        top: 125px!important;
+    }
+}
+
+#menu .cream-soda ul li:nth-child(2n-1) .text,
+#menu .parfaite ul li:nth-child(2n-1) .text {
+    position: static;
+    width: 100%;
+    top: 150px;
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n-1) .text,
+    #menu .parfaite ul li:nth-child(2n-1) .text {
+        position: absolute;
+        width: 232px;
+        top: 141px;
+        right: 0;
+        margin-top: 0;
+        font-size: 15px;
+    }
+}
+
+#menu .cream-soda ul li .price span,
+#menu .parfaite ul li .price span {
+    font-size: 9px;
+    margin-left: -5px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li .price span,
+    #menu .parfaite ul li .price span {
+        font-size: 13px;
+    }
+}
+
+#menu .cream-soda ul li:nth-child(2n-1) .price,
+#menu .parfaite ul li:nth-child(2n-1) .price {
+    position: absolute;
+    width: initial;
+    top: calc(62vw - 24px);
+    left: calc(-9px + 67vw);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n-1) .price,
+    #menu .parfaite ul li:nth-child(2n-1) .price {
+        position: absolute;
+        font-size: 18px;
+        width: 232px;
+        top: initial;
+        bottom: 3px;
+        left: auto;
+        right: 0;
+    }
+
+    #menu .parfaite ul li:nth-child(2n-1) .price {
+        right: -2px;
+    }
+}
+
+#menu .cream-soda ul li:nth-child(2n) h4,
+#menu .parfaite ul li:nth-child(2n) h4{
+    text-align: right;
+}
+
+#menu .cream-soda ul li:nth-child(2n) .text,
+#menu .parfaite ul li:nth-child(2n) .text {
+    position: static;
+    width: 100%;
+    top: 150px;
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n) .text,
+    #menu .parfaite ul li:nth-child(2n) .text {
+        position: absolute;
+        width: 226px;
+        top: 141px;
+        line-height: 1.6;
+        left: 0;
+        text-align: justify;
+        font-size: 15px;
+    }
+}
+
+#menu .cream-soda ul li:nth-child(2n) .price,
+#menu .parfaite ul li:nth-child(2n) .price {
+    position: absolute;
+    width: initial;
+    top: calc(62vw - 24px);
+    left: 0;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .cream-soda ul li:nth-child(2n) .price,
+    #menu .parfaite ul li:nth-child(2n) .price {
+        position: absolute;
+        font-size: 18px;
+        width: 226px;
+        top: initial;
+        bottom: 1px;
+        left: 0;
+    }
+}
+
+#menu .director {
+    display: flex;
+    text-align: left;
+    margin: 30px auto 0;
+    padding-top: 16px;
+    padding-left: 3px;
+    width: 100%;
+    border-top: 1px solid #717171;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director {
+        margin: 82px auto 20px;
+        padding-top: 23px;
+        padding-left: 0;
+        width: 654px;
+        align-items: initial;
+    }
+}
+
+#menu .director .image {
+    text-align: left;
+    width: 35%;
+    margin-right: 5%;
+    margin-top: 5%;
+    max-width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .image {
+        text-align: center;
+        width: 190px;
+        margin-left: 14px;
+        margin-right: 0;
+        margin-top: 0;
+        max-width: initial;
+    }
+}
+
+#menu .director .image img {
+    width: 120px;
+}
+
+#menu .director .text {
+    width: 65%;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .text {
+        width: 540px;
+    }
+}
+
+#menu .director .text h4 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .text h4 {
+        font-size: 16px;
+    }
+}
+
+#menu .director .text p {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+    #menu .director .text p {
+        font-size: 14px;
+        margin-top: 12px;
+        line-height: 1.8;
+        letter-spacing: 2px;
+    }
+}
+
+#recipe h3 {
+    margin-top: 28px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe h3 {
+        margin-top: 48px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+#recipe ul {
+    margin: 24px auto 40px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul {
+        margin: 30px auto 0;
+        width: 742px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#recipe ul li {
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul li {
+        width: 233px;
+        margin-top: 0;
+    }
+}
+
+#recipe ul li a .image {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul li a .image {
+        overflow: hidden;
+        width: 233px;
+        height: 233px;
+    }
+}
+
+#recipe ul li a .image img {
+    opacity: 1;
+    transition: 0.6s all!important;
+}
+
+#recipe ul li a .image img:hover {
+    transform:scale(1.12, 1.12);
+    opacity: 0.8;
+    transition: 0.5s all!important;
+}
+
+#recipe ul li p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+    #recipe ul li p {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+footer {
+    background: white;
+}
+
+.l-footer {
+    height: auto!important;
+}
